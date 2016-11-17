@@ -5,6 +5,7 @@
     <title>TechLA Internships</title>
     <link rel="icon" href="favicon.ico">
 
+    <link href="//fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <style>
     html, body {
         height: 100%;
@@ -12,6 +13,7 @@
     body {
         margin: 0;
         font-family: sans-serif;
+        font-size: 16px;
         text-align: center;
         background: url('img/la.png');
         background-size: cover;
@@ -24,7 +26,7 @@
     }
     .logo {
         height: 64px;
-        margin: -64px auto 0;
+        margin: -90px auto 0; /* 180/2px */
         display: block;
         opacity: .7;
     }
@@ -34,6 +36,31 @@
         text-transform: uppercase;
         letter-spacing: 3px;
         opacity: .4;
+        user-select: none;
+    }
+    .fellowship {
+        height: 44px;
+        margin-top: 8px; padding: 0 24px;
+        display: inline-block;
+        /*border: 2px solid #fff;*/
+        border-radius: 2px;
+        font-family: 'Lato';
+        text-decoration: none;
+        line-height: 44px;
+        letter-spacing: 0.08em;
+        background: #ff5645;
+        /*background: #fff;*/
+        color: #fff;
+        opacity: 0.6;
+        
+        transition: all 0.22s ease;
+    }
+    .fellowship>span {
+        font-weight: bold;
+    }
+    .fellowship:hover {
+        opacity: 1;
+        transform: scale(1.04);
     }
     </style>
 </head>
@@ -41,7 +68,8 @@
     <div class="spacer-50"></div>
     <img src="img/techla-white.svg" alt="TechLA" class="logo">
     <p class="coming-soon">Coming Soon</p>
-
+    <a href="//tech.la/fellows" class="fellowship">Learn About <span>The Fellowship</span></a>
+    
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
